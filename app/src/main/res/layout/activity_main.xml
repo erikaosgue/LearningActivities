@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/duckId"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            app:srcCompat="@drawable/duck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="186dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="120dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/parrotId"
+            android:layout_width="190dp"
+            android:layout_height="130dp"
+            app:srcCompat="@drawable/parrot" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="188dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/eagleId"
+            android:layout_width="192dp"
+            android:layout_height="143dp"
+            app:srcCompat="@drawable/eagle" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titleMainTextView"
+        style="@style/CustomStyle"
+        android:layout_width="264dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        android:text="TYPE OF BIRDS"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
