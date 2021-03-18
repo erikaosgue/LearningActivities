@@ -9,7 +9,6 @@ import com.erikaosgue.learningactivities.databinding.ActivitySecondBinding
 class SecondActivity : AppCompatActivity() {
 
     lateinit var activitySecondBinding: ActivitySecondBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activitySecondBinding = ActivitySecondBinding.inflate(layoutInflater)
