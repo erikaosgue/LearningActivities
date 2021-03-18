@@ -19,8 +19,9 @@
 
         <ImageView
             android:id="@+id/duckId"
-            android:layout_width="match_parent"
-            android:layout_height="134dp"
+            android:layout_width="171dp"
+            android:layout_height="85dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/duck" />
 
     </androidx.cardview.widget.CardView>
@@ -29,17 +30,17 @@
         android:id="@+id/cardView"
         android:layout_width="186dp"
         android:layout_height="103dp"
-        android:layout_marginBottom="120dp"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="623dp">
 
         <ImageView
             android:id="@+id/parrotId"
-            android:layout_width="190dp"
-            android:layout_height="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/parrot" />
     </androidx.cardview.widget.CardView>
 
@@ -57,8 +58,9 @@
 
         <ImageView
             android:id="@+id/eagleId"
-            android:layout_width="192dp"
-            android:layout_height="143dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/eagle" />
     </androidx.cardview.widget.CardView>
 
