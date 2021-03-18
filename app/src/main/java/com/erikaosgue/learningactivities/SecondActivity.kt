@@ -49,7 +49,7 @@ class SecondActivity : AppCompatActivity() {
 
     }
 
-    // Sending a Message before going Back
+    // Sending a Toast Message before going the user can go Back
     var variable: Int = 0
     override fun onBackPressed() {
 
