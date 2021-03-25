@@ -4,76 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="60dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMainTextView">
 
         <ImageView
             android:id="@+id/duckId"
-            android:layout_width="171dp"
-            android:layout_height="85dp"
-            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/duck" />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="186dp"
-        android:layout_height="103dp"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
         app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="623dp">
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
         <ImageView
             android:id="@+id/parrotId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/parrot" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
-        android:layout_width="188dp"
-        android:layout_height="101dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
 
         <ImageView
             android:id="@+id/eagleId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
             app:srcCompat="@drawable/eagle" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/titleMainTextView"
         style="@style/CustomStyle"
-        android:layout_width="264dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
         android:text="TYPE OF BIRDS"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

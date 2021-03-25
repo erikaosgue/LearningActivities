@@ -22,16 +22,16 @@ class SecondActivity : AppCompatActivity() {
             if (animal?.get("animal") == "parrot") {
                 activitySecondBinding.deafultAnimal.setImageDrawable(application.getDrawable(R.drawable.parrot))
                 activitySecondBinding.titleTexView.text = "PARROT"
-                activitySecondBinding.descriptionTextView.text = R.string.parrotInfo.toString()
+                activitySecondBinding.descriptionTextView.text = getString(R.string.parrotInfo)
             }
             else if (animal?.get("animal") == "eagle") {
                 activitySecondBinding.deafultAnimal.setImageDrawable(application.getDrawable(R.drawable.eagle))
                 activitySecondBinding.titleTexView.text = "EAGLE"
-                activitySecondBinding.descriptionTextView.text = R.string.eagleInfo.toString()
+                activitySecondBinding.descriptionTextView.text = getString(R.string.eagleInfo)
             }else {
                 activitySecondBinding.deafultAnimal.setImageDrawable(application.getDrawable(R.drawable.duck))
                 activitySecondBinding.titleTexView.text = "DUCK"
-                activitySecondBinding.descriptionTextView.text = R.string.duckInfo.toString()
+                activitySecondBinding.descriptionTextView.text = getString(R.string.duckInfo)
             }
         }
 
